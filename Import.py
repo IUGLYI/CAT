@@ -1,12 +1,11 @@
-  
-from Pet_Home import Cat
+from script import Cat
 
-cat_1 = Cat("Барон", "мальчик", 2)
-cat_2 = Cat("Сэм", "мальчик", 2)
+cat1 = Cat('Sam', 'Boy', 2)
+cat2 = Cat('Baron', 'Boy', 2)
 
-cats = [cat_1, cat_2]
+cats =[cat1, cat2]
 
-for cat in cats:
-    print("Имя:", cat.getName(),
-          "Пол:", cat.getGender(),
-          "Возраст:", cat.getAge())
+for cat in  cats:
+    print('Name:', cat.get_name(),
+          'Gender:', cat.get_gender(),
+          'Age:', cat.get_age())
